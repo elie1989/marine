@@ -15,7 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from marineapp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('',views.login, name='login' ),
+    path('accueil/',views.index, name='index' ),
+    path('reception/',views.reception, name='reception' ),
+    path('triage/',views.triage, name='triage' ),
+    path('consultations/',views.consultations, name='consultations' ),
+    
 ]
