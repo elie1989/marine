@@ -11,6 +11,7 @@ class patient (models.Model):
     adresse = models.TextField(blank=True)
     email = models.CharField(max_length=25)
     dateArrive = models.CharField(max_length=50, blank=True)
+    antecedents = models.TextField(blank=True)
 
     def __str__(self):
         return self.noms
