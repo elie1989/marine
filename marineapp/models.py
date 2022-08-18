@@ -13,10 +13,10 @@ class patient (models.Model):
     dateArrive = models.CharField(max_length=50, blank=True)
     antecedents_medicaux = models.TextField(blank=True)
     antecedents_chirugicaux = models.TextField(blank=True)
-
-
+   
     def __str__(self):
         return self.noms
+    
 class utilisateur (models.Model):
     noms = models.CharField(max_length=200)
     sexe = models.CharField(max_length=12)
